@@ -3,12 +3,12 @@ package pizzas;
 import afpizza.*;
 
 public abstract class Pizza {
-	String name;
+	protected String name;
 
-	Dough dough;
-	Sauce sauce;
-	Veggies veggies[];
-	Cheese cheese;
+	protected Dough dough;
+	protected Sauce sauce;
+	protected Veggies veggies[];
+	protected Cheese cheese;
 	Pepperoni pepperoni;
 	Clams clam;
 
@@ -26,7 +26,7 @@ public abstract class Pizza {
 		System.out.println("Place pizza in official PizzaStore box");
 	}
 
-	void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
